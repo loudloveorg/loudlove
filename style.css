@@ -1,0 +1,397 @@
+```css
+/* =========================
+   LOUDLOVE
+   Main Website Styles
+   ========================= */
+
+:root {
+    --cream: #f7f3ec;
+    --warm-white: #fffdf9;
+    --sand: #e9dfd1;
+    --brown: #40382f;
+    --soft-brown: #766b60;
+    --gold: #b49a70;
+    --dark: #25221e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--warm-white);
+    color: var(--brown);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+}
+
+h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+.narrow {
+    width: min(760px, 90%);
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: var(--gold);
+}
+
+
+/* HEADER */
+
+.site-header {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--sand);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo,
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    padding: 14px 26px;
+    border: 1px solid var(--brown);
+    transition: 0.3s ease;
+    margin: 5px;
+}
+
+.button.primary {
+    background: var(--brown);
+    color: white;
+}
+
+.button.primary:hover {
+    background: var(--dark);
+}
+
+.button.secondary {
+    background: transparent;
+}
+
+.button.secondary:hover {
+    background: var(--sand);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    background: var(--cream);
+}
+
+.hero-content {
+    padding: 100px 0;
+}
+
+.hero-text {
+    max-width: 620px;
+    font-size: 1.2rem;
+    color: var(--soft-brown);
+    margin: 35px 0;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+
+/* INTRO */
+
+.intro {
+    padding: 130px 0;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.15rem;
+    color: var(--soft-brown);
+}
+
+
+/* PILLARS */
+
+.pillars {
+    padding: 110px 0;
+    background: var(--sand);
+}
+
+.pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin-top: 60px;
+}
+
+.pillar span {
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+}
+
+.pillar h3 {
+    margin: 15px 0;
+}
+
+.pillar p {
+    color: var(--soft-brown);
+}
+
+
+/* DAILY WORD */
+
+.daily-word {
+    padding: 130px 0;
+    background: var(--warm-white);
+}
+
+.scripture {
+    font-style: italic;
+    color: var(--gold);
+    font-size: 1.1rem;
+}
+
+.reflection {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid var(--sand);
+}
+
+.reflection h3 {
+    margin: 35px 0 15px;
+}
+
+
+/* PRAYER */
+
+.prayer {
+    padding: 130px 0;
+    text-align: center;
+    background: var(--cream);
+}
+
+.prayer p {
+    color: var(--soft-brown);
+}
+
+.small-note {
+    font-size: 0.8rem;
+    margin-top: 25px;
+}
+
+
+/* MISSION */
+
+.mission {
+    padding: 130px 0;
+    background: var(--dark);
+    color: white;
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.mission p {
+    color: #d8d0c6;
+}
+
+.mission-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission-steps div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #514a42;
+    padding-bottom: 15px;
+}
+
+.mission-steps strong {
+    color: var(--gold);
+}
+
+
+/* MODEST */
+
+.modest {
+    padding: 140px 0;
+    text-align: center;
+    background: var(--sand);
+}
+
+.modest-tagline {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.8rem;
+}
+
+.made-purpose {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+
+/* WORSHIP */
+
+.worship {
+    padding: 140px 0;
+    text-align: center;
+}
+
+.coming-soon {
+    display: inline-block;
+    margin-top: 20px;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    color: var(--gold);
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 130px 0;
+    background: var(--cream);
+}
+
+.about p {
+    color: var(--soft-brown);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+footer p {
+    color: #cfc7bc;
+    font-size: 0.85rem;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .pillar-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .mission-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+}
+```
