@@ -554,3 +554,129 @@ footer p {
     }
 
 }
+
+/* ========================================
+   LOUDLOVE IMAGE STYLES
+   ======================================== */
+
+/* HERO SECTION */
+.hero {
+    min-height: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(30, 23, 15, 0.38),
+            rgba(30, 23, 15, 0.38)
+        ),
+        url("images/hero.png");
+
+    background-size: cover;
+    background-position: center;
+    color: #fffaf2;
+}
+
+.hero-content {
+    padding: 55px 20px;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+    color: #fffaf2;
+}
+
+.hero .hero-text {
+    color: #fffaf2;
+    font-size: 1rem;
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+.hero .eyebrow {
+    color: #ead4ad;
+}
+
+/* TODAY'S WORD */
+.daily-word {
+    padding: 80px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248, 242, 232, 0.93),
+            rgba(248, 242, 232, 0.72)
+        ),
+        url("images/daily-word.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* PRAYER SECTION */
+.prayer {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            rgba(249, 244, 236, 0.78),
+            rgba(249, 244, 236, 0.78)
+        ),
+        url("images/prayer.png");
+
+    background-size: cover;
+    background-position: center 35%;
+}
+
+/* MISSION SECTION */
+.mission {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            rgba(35, 30, 24, 0.70),
+            rgba(35, 30, 24, 0.70)
+        ),
+        url("images/mission.png");
+
+    background-size: cover;
+    background-position: center;
+    color: #fffaf2;
+}
+
+/* MODEST CLOTHING SECTION */
+.modest {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            rgba(248, 243, 235, 0.80),
+            rgba(248, 243, 235, 0.80)
+        ),
+        url("images/modest.png");
+
+    background-size: cover;
+    background-position: center 30%;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 800px) {
+    .hero {
+        min-height: 430px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 45px 20px;
+    }
+
+    .daily-word,
+    .prayer,
+    .mission,
+    .modest {
+        padding: 55px 0;
+    }
+}
